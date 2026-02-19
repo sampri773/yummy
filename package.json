@@ -1,0 +1,22 @@
+{
+  "name": "yummy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sampri773/yummy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sampri773/yummy/issues"
+  },
+  "homepage": "https://github.com/sampri773/yummy#readme",
+  "description": "",
+  "dependencies": {
+    "bulma": "^1.0.4"
+  }
+}
