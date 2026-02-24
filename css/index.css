@@ -421,105 +421,106 @@ ol {
 .slicknav_menu {
 	display: none;
 }
-.page-top-recipe {
-	padding-bottom: 110px;
+/* --- Mise en page et Espacements --- */
+.latest-recipes-section {
+    padding: 60px 0; /* Espace haut et bas */
 }
 
-.page-top-recipe .pt-recipe-item {
-	margin-bottom: 35px;
+/* On s'assure que le container ne touche pas les bords sur les grands écrans */
+.container {
+    max-width: 1170px !important; 
+    margin: 0 auto;
 }
 
-.page-top-recipe .pt-recipe-item:hover .pt-recipe-img:after {
-	opacity: 0.34;
+/* --- Style des Items --- */
+.recipe-item {
+    text-align: center;
 }
 
-.page-top-recipe .pt-recipe-item:hover .pt-recipe-img i {
-	opacity: 1;
+.recipe-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #252525;
+    line-height: 1.4;
 }
 
-.page-top-recipe .pt-recipe-item.large-item {
-	text-align: center;
+/* --- L'effet de Hover (Survol) --- */
+.recipe-img-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.page-top-recipe .pt-recipe-item.large-item .pt-recipe-img {
-	height: 745px;
+.recipe-img-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s;
 }
 
-.page-top-recipe .pt-recipe-item.large-item .pt-recipe-text {
-	text-align: center;
-	display: inline-block;
-	background: white;
-	margin-top: -56px;
-	padding-top: 19px;
-	padding-left: 35px;
-	padding-right: 35px;
-	padding-bottom: 30px;
-	z-index: 999;
-	position: relative;
+/* Le rideau rose transparent */
+.recipe-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(246, 61, 102, 0.6); /* Rose avec 60% d'opacité */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Invisible par défaut */
+    transition: all 0.3s ease;
 }
 
-.page-top-recipe .pt-recipe-item.large-item .pt-recipe-text span {
-	color: #878787;
-	display: inline-block;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 30px;
+.recipe-hover span {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
 }
 
-.page-top-recipe .pt-recipe-item.large-item .pt-recipe-text h3 {
-	color: #353535;
-	font-weight: 700;
-	line-height: 33px;
+/* Affichage au survol */
+.recipe-img-container:hover .recipe-hover {
+    opacity: 1;
 }
 
-.page-top-recipe .pt-recipe-item .pt-recipe-img {
-	height: 311px;
-	min-width: 100%;
-	position: relative;
-	z-index: 1;
+.recipe-img-container:hover img {
+    transform: scale(1.05); /* Petit zoom sur l'image */
 }
 
-.page-top-recipe .pt-recipe-item .pt-recipe-img:after {
-	position: absolute;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	background: #FC0254;
-	content: "";
-	opacity: 0;
-	z-index: -1;
-	-webkit-transition: all 0.2s;
-	transition: all 0.2s;
+/* --- Carte Centrale Spécifique --- */
+.main-height {
+    height: 520px; /* Ajuste selon tes images */
 }
 
-.page-top-recipe .pt-recipe-item .pt-recipe-img i {
-	position: absolute;
-	left: 0;
-	right: 0;
-	text-align: center;
-	top: 50%;
-	-webkit-transform: translateY(-46px);
-	transform: translateY(-46px);
-	color: #fff;
-	opacity: 0;
-	-webkit-transform: translateY(-8px);
-	transform: translateY(-8px);
-	-webkit-transition: all 0.2s;
-	transition: all 0.2s;
+.main-height img {
+    height: 100%;
+    object-fit: cover;
 }
 
-.page-top-recipe .pt-recipe-item .pt-recipe-text {
-	text-align: center;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 16px;
+.main-recipe-info {
+    text-align: center;
+    padding: 30px 20px;
+    background: #fff;
+    margin-top: -50px; /* Fait remonter le texte sur l'image */
+    position: relative;
+    z-index: 5;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-.page-top-recipe .pt-recipe-item .pt-recipe-text h4 {
-	color: #353535;
-	line-height: 30px;
-	font-weight: 700;
+.recipe-date {
+    font-size: 12px;
+    color: #b2b2b2;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #252525;
 }
 
 /*---------------------
