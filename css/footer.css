@@ -1,0 +1,114 @@
+/* Fond gris clair et espacement global */
+.footer-section {
+    background-color: #f9f9fb;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Style de la partie gauche */
+.footer-left {
+    flex: 0 0 40%;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer-left p {
+    color: #888888;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+/* Style de la partie droite (Newsletter) */
+.footer-right {
+    flex: 0 0 50%;
+}
+
+.subscribe-form h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #252525;
+    margin-bottom: 30px;
+}
+
+.subscribe-form form {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.subscribe-form input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    padding-left: 20px;
+    font-style: italic;
+    color: #888;
+}
+
+.subscribe-form button {
+    background-color: #f63d66; /* Le rose vif du design */
+    color: #ffffff;
+    border: none;
+    padding: 0 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #e0325a;
+}
+
+/* Icônes sociales grises */
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 0;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    color: #b2b2b2;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.social-item i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Texte de copyright en bas */
+.copyright-text {
+    border-top: 1px solid #ebebeb;
+    margin-top: 70px;
+    padding-top: 25px;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 14px;
+}
+
+.copyright-text i {
+    color: #b2b2b2;
+}
+
+.copyright-text a {
+    color: #007bff;
+    text-decoration: none;
+}
