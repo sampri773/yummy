@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../node_modules/bulma/css/bulma.min.css">
     <link rel="stylesheet" href="../css/bestoff.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
 </head>
 <body>
@@ -246,35 +247,57 @@
     </section>
     </main>
 
-    <footer class="is-flex is-justify-content-center has-background-light">
-        <section class="column is-6 mt-6">
-            <img class="mb-6" src="../img/footer-logo.png" alt="">
-            <p class="width-adj mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-            <p class="is-size-7">Copyright ©2026 All rights reserved | This template is made with <p class="fa-regular fa-heart is-size-7"></p> by <a class="is-size-7" href="">Colorlib</a></p>
-        </section>
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="../img/footer-logo.png" alt="Yummy Food Blog">
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+            accumsan lacus vel facilisis.
+          </p>
+        </div>
 
-        <section class="mt-6 footer-2" >
-            <h3 class="title is-4">Subscribe to our newsletter</h3>
-        
-            <div class="field has-addons mb-5">
-                <div class="control is-expanded">
-                    <input class="input" type="email" placeholder="Your e-mail">
-                </div>
-                <div class="control">
-                    <button class="button is-danger has-text-weight-bold px-6">
-                    Subscribe
-                    </button>
-                </div>
+        <div class="footer-right">
+          <div class="subscribe-form">
+            <h3>Subscribe to our newsletter</h3>
+            <form action="#">
+              <input type="email" placeholder="Your e-mail">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+
+          <div class="social-links">
+            <div class="social-item">
+              <i class="fa fa-instagram"></i><span>INSTAGRAM</span>
             </div>
+            <div class="social-item">
+              <i class="fa fa-pinterest"></i><span>PINTEREST</span>
+            </div>
+            <div class="social-item">
+              <i class="fa fa-facebook"></i><span>FACEBOOK</span>
+            </div>
+            <div class="social-item">
+              <i class="fa fa-twitter"></i><span>TWITTER</span>
+            </div>
+            <div class="social-item">
+              <i class="fa fa-youtube-play"></i><span>YOUTUBE</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                <div class="is-flex is-justify-content-space-between has-text-grey-light is-size-7">
-                    <span><i class="fab fa-instagram"></i> INSTAGRAM</span>
-                    <span><i class="fab fa-pinterest"></i> PINTEREST</span>
-                    <span><i class="fab fa-facebook"></i> FACEBOOK</span>
-                    <span><i class="fab fa-twitter"></i> TWITTER</span>
-                    <span><i class="fab fa-youtube"></i> YOUTUBE</span>
-                </div>
-        </section>
-    </footer>
+      <div class="copyright-text">
+        <p>
+          Copyright ©2026 All rights reserved | This template is made with
+          <i class="fa fa-heart-o"></i> by <a href="#">Colorlib</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
