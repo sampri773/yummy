@@ -1,12 +1,413 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../node_modules/bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
-    
+  <header class="header-section">
+    <div class="container">
+      <div class="has-text-centered">
+        <div class="logo">
+          <a href="./index.html"><img src="../img/logo.png" alt=""></a>
+        </div>
+      </div>
+      <nav role="navigation" aria-label="main navigation" class="has-text-centered">
+        <div class="navbar-brand">
+          <div class="nav-right search-switch">
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <nav class="main-menu mobile-menu">
+            <ul>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Pages</a>
+                <ul class="sub-menu">
+                  <li><a href="about-me.html">About Me</a></li>
+                  <li><a href="categories.html">Categories</a></li>
+                  <li><a href="recipe.html">Recipe</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </li>
+              <li><a href="recipe.html">Recipes</a></li>
+              <li><a href="categories.html">Best Of</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+      <div id="mobile-menu-wrap"></div>
+    </div>
+  </header>
+  <section class="section has-text-centered">
+    <div class="container">
+      <div class="columns is-variable is-4">
+
+        <div class="column is-3">
+          <div class="mb-5 has-text-centered">
+            <figure class="image mb-3">
+              <img src="../img/recipe-1.jpg" alt="Carrot Cake">
+            </figure>
+            <h4 class="title is-5 has-text-weight-bold">Raw Vegan Carrot Cake Bites with Avocado</h4>
+          </div>
+          <div class="has-text-centered">
+            <figure class="image mb-3">
+              <img src="../img/recipe/recipe-2.jpg" alt="Lasagna Soup">
+            </figure>
+            <h4 class="title is-5 has-text-weight-bold">One Pot Weeknight Lasagna Soup Recipe</h4>
+          </div>
+        </div>
+
+        <div class="column is-6">
+          <div class="recipe-main-card is-relative" style="height: 100%;">
+            <figure class="image is-fullheight">
+              <img src="../img/recipe/recipe-3.jpg" alt="Salmon" style="height: 100%; object-fit: cover;">
+            </figure>
+            <div class="main-recipe-text has-background-white has-text-centered p-4">
+              <p class="is-size-7 has-text-grey">March 10, 2019</p>
+              <h3 class="title is-3 has-text-weight-bold">Cannellini Aglio e Olio with Salmon</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-3">
+          <div class="mb-5 has-text-centered">
+            <figure class="image mb-3">
+              <img src="../img/recipe/recipe-4.jpg" alt="Beef Burger">
+            </figure>
+            <h4 class="title is-5 has-text-weight-bold">Beef Burger with French Fries and Salad</h4>
+          </div>
+          <div class="has-text-centered">
+            <figure class="image mb-3">
+              <img src="../img/recipe/recipe-5.jpg" alt="Pancakes">
+            </figure>
+            <h4 class="title is-5 has-text-weight-bold">Raspberry Pancakes with Honey and Butter</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Page Top Recipe Section End -->
+
+  <!-- Top Recipe Section Begin -->
+  <section class="section top-recipe spad">
+    <div class="section-title-container">
+      <div class="section-title">
+        <h5 class="has-text-white">Top Recipes this Week</h5>
+      </div>
+    </div>
+
+    <div class="container po-relative mt-6">
+      <div class="plus-icon">
+        <i class="fa fa-plus"></i>
+      </div>
+
+      <div class="columns is-desktop">
+        <div class="column is-6-desktop is-12-tablet">
+          <div class="top-recipe-item large-item">
+            <div class="top-recipe-img">
+              <img src="../img/top-recipe/recipe-1.jpg" alt="Recipe 1" class="img-responsive">
+            </div>
+            <div class="top-recipe-text mt-4">
+              <div class="cat-name">Desert</div>
+              <a href="#" class="recipe-link">
+                <h4 class="title is-4">One Pot Weeknight Lasagna Soup Recipe</h4>
+              </a>
+              <p class="has-text-grey">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-6-desktop is-12-tablet">
+
+          <div class="top-recipe-item mb-5 recipe-list-row">
+            <div class="columns is-mobile is-variable is-3">
+              <div class="column is-4">
+                <div class="top-recipe-img">
+                  <img src="../img/top-recipe/recipe-2.jpg" alt="Recipe 2" class="img-responsive thumb-img">
+                </div>
+              </div>
+              <div class="column is-8">
+                <div class="top-recipe-text">
+                  <div class="cat-name">Vegan</div>
+                  <a href="#" class="recipe-link">
+                    <h4 class="title is-6">One Pot Weeknight Lasagna Soup Recipe</h4>
+                  </a>
+                  <p class="is-size-7 has-text-grey is-hidden-mobile">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="top-recipe-item mb-5 recipe-list-row">
+            <div class="columns is-mobile is-variable is-3">
+              <div class="column is-4">
+                <div class="top-recipe-img">
+                  <img src="../img/top-recipe/recipe-3.jpg" alt="Recipe 3" class="img-responsive thumb-img">
+                </div>
+              </div>
+              <div class="column is-8">
+                <div class="top-recipe-text">
+                  <div class="cat-name">Meat lover</div>
+                  <a href="#" class="recipe-link">
+                    <h4 class="title is-6">Veggie soup with Mushrooms</h4>
+                  </a>
+                  <p class="is-size-7 has-text-grey is-hidden-mobile">
+                    Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="top-recipe-item mb-5 recipe-list-row">
+            <div class="columns is-mobile is-variable is-3">
+              <div class="column is-4">
+                <div class="top-recipe-img">
+                  <img src="../img/top-recipe/recipe-4.jpg" alt="Recipe 4" class="img-responsive thumb-img">
+                </div>
+              </div>
+              <div class="column is-8">
+                <div class="top-recipe-text">
+                  <div class="cat-name">Desert</div>
+                  <a href="#" class="recipe-link">
+                    <h4 class="title is-6">Caramel Ice Cream with Berries</h4>
+                  </a>
+                  <p class="is-size-7 has-text-grey is-hidden-mobile">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="top-recipe-item mb-5 recipe-list-row">
+            <div class="columns is-mobile is-variable is-3">
+              <div class="column is-4">
+                <div class="top-recipe-img">
+                  <img src="../img/top-recipe/recipe-5.jpg" alt="Recipe 5" class="img-responsive thumb-img">
+                </div>
+              </div>
+              <div class="column is-8">
+                <div class="top-recipe-text">
+                  <div class="cat-name">Desert</div>
+                  <a href="#" class="recipe-link">
+                    <h4 class="title is-6">Fresh Octopus with lime juice</h4>
+                  </a>
+                  <p class="is-size-7 has-text-grey is-hidden-mobile">
+                    Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Top Recipe Section End -->
+
+  <!-- Categories Filter Section Begin -->
+  <section class="section categories-filter-section spad">
+    <div class="container">
+
+      <div class="columns is-centered mb-6">
+        <div class="column is-10">
+          <div class="filter-item has-text-centered">
+            <ul class="filter-list">
+              <li class="filter-btn active" data-filter="*">Vegetarian</li>
+              <li class="filter-btn" data-filter=".mostpopular">Most popular</li>
+              <li class="filter-btn" data-filter=".meatlover">Meat Lover</li>
+              <li class="filter-btn" data-filter=".glutenfree">Gluten Free</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-multiline" id="category-filter">
+
+        <div class="column is-one-fifth-desktop is-half-tablet mix all mostpopular">
+          <div class="cf-item">
+            <div class="cf-item-pic">
+              <img src="../img/cate-filter/cate-filter-1.jpg" alt="Sunday Brunch">
+            </div>
+            <div class="cf-item-text">
+              <h5 class="title is-6 mt-3">Sunday Brunch: Spaghetti and Eggs Recipe</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-one-fifth-desktop is-half-tablet mix all mostpopular">
+          <div class="cf-item">
+            <div class="cf-item-pic"><img src="../img/cate-filter/cate-filter-2.jpg" alt=""></div>
+            <div class="cf-item-text">
+              <h5 class="title is-6 mt-3">Sunday Brunch: Spaghetti and Eggs Recipe</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-one-fifth-desktop is-half-tablet mix all meatlover mostpopular">
+          <div class="cf-item">
+            <div class="cf-item-pic"><img src="../img/cate-filter/cate-filter-3.jpg" alt=""></div>
+            <div class="cf-item-text">
+              <h5 class="title is-6 mt-3">Sunday Brunch: Spaghetti and Eggs Recipe</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-one-fifth-desktop is-half-tablet mix all meatlover">
+          <div class="cf-item">
+            <div class="cf-item-pic"><img src="../img/cate-filter/cate-filter-4.jpg" alt=""></div>
+            <div class="cf-item-text">
+              <h5 class="title is-6 mt-3">Sunday Brunch: Spaghetti and Eggs Recipe</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-one-fifth-desktop is-half-tablet mix all meatlover glutenfree">
+          <div class="cf-item">
+            <div class="cf-item-pic"><img src="../img/cate-filter/cate-filter-5.jpg" alt=""></div>
+            <div class="cf-item-text">
+              <h5 class="title is-6 mt-3">Sunday Brunch: Spaghetti and Eggs Recipe</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Categories Filter Section End -->
+
+  <!-- Feature Recipe Section Begin -->
+  <section class="section feature-recipe spad">
+    <div class="section-title-container">
+      <div class="section-title">
+        <h5 class="has-text-white">Featured Recipes</h5>
+      </div>
+    </div>
+
+    <div class="container po-relative mt-6">
+      <div class="plus-icon">
+        <i class="fa fa-plus"></i>
+      </div>
+
+      <div class="columns is-desktop">
+        <div class="column is-6-desktop is-12-tablet">
+          <div class="fr-item">
+            <div class="columns is-mobile is-vcentered">
+              <div class="column is-5">
+                <div class="fr-item-img">
+                  <img src="../img/feature-1.jpg" alt="Recipe 1" class="image-circle">
+                </div>
+              </div>
+              <div class="column is-7">
+                <div class="fr-item-text">
+                  <h4 class="title is-5">Sunday Brunch: Spaghetti and Eggs Recipe</h4>
+                  <p class="has-text-grey">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-6-desktop is-12-tablet">
+          <div class="fr-item">
+            <div class="columns is-mobile is-vcentered">
+              <div class="column is-5">
+                <div class="fr-item-img">
+                  <img src="../img/feature-2.jpg" alt="Recipe 2" class="image-circle">
+                </div>
+              </div>
+              <div class="column is-7">
+                <div class="fr-item-text">
+                  <h4 class="title is-5">Sunday Brunch: Spaghetti and Eggs Recipe</h4>
+                  <p class="has-text-grey">
+                    Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                    ipsum suspendisse ultrices gravida.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="../img/footer-logo.png" alt="Yummy Food Blog">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis 
+                    ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas 
+                    accumsan lacus vel facilisis.
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <div class="subscribe-form">
+                    <h3>Subscribe to our newsletter</h3>
+                    <form action="#">
+                        <input type="email" placeholder="Your e-mail">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                
+                <div class="social-links">
+                    <div class="social-item">
+                        <i class="fa fa-instagram"></i><span>INSTAGRAM</span>
+                    </div>
+                    <div class="social-item">
+                        <i class="fa fa-pinterest"></i><span>PINTEREST</span>
+                    </div>
+                    <div class="social-item">
+                        <i class="fa fa-facebook"></i><span>FACEBOOK</span>
+                    </div>
+                    <div class="social-item">
+                        <i class="fa fa-twitter"></i><span>TWITTER</span>
+                    </div>
+                    <div class="social-item">
+                        <i class="fa fa-youtube-play"></i><span>YOUTUBE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-text">
+            <p>
+                Copyright ©2026 All rights reserved | This template is made with 
+                <i class="fa fa-heart-o"></i> by <a href="#">Colorlib</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
 </body>
+
 </html>
