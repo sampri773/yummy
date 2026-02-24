@@ -5,3 +5,34 @@ h1{
     max-width: 100ch;
     line-height: 1.7;
 }
+ol li::marker {
+    color:#f14668; 
+    font-weight: bold; 
+    
+}
+ol li{
+padding-left: 3rem;
+}
+ol li p {
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+.content ul li::marker{
+    font-size: 2rem;
+}
+.textbasicon{
+    line-height: 1.7;
+    background-color: beige;
+}
+.couleur{
+    background-color: beige;
+}
+.pousser{
+    margin-bottom: 15rem;
+}
+.text_max{
+    max-width: 25ch;
+}
+.end{
+    padding-left: 15rem;
+}
